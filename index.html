@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MEWING STORE - Top Up Game</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="logo.png">
+</head>
+<body>
+  <header>
+    <h1>MEWING STORE</h1>
+    <p>Top Up Game Cepat, Aman, dan Terpercaya!</p>
+  </header>
+  <main>
+    <section class="game-list">
+      <h2>Daftar Game</h2>
+      <ul>
+        <li>Mobile Legends</li>
+        <li>Free Fire</li>
+        <li>PUBG Mobile</li>
+        <li>Genshin Impact</li>
+      </ul>
+    </section>
+    <section class="form-section">
+      <h2>Form Top Up</h2>
+      <form id="orderForm" onsubmit="sendToWhatsApp(); return false;">
+        <label for="game">Pilih Game:</label>
+        <select id="game" name="game">
+          <option value="Mobile Legends">Mobile Legends</option>
+          <option value="Free Fire">Free Fire</option>
+          <option value="PUBG Mobile">PUBG Mobile</option>
+          <option value="Genshin Impact">Genshin Impact</option>
+        </select>
+        <label for="id">ID Pemain:</label>
+        <input type="text" id="id" name="id" required>
+        <label for="jumlah">Jumlah Top Up:</label>
+        <select id="jumlah" name="jumlah">
+          <option value="5">5 Diamonds</option>
+          <option value="50">50 Diamonds</option>
+          <option value="100">100 Diamonds</option>
+          <option value="500">500 Diamonds</option>
+        </select>
+        <label for="pembayaran">Metode Pembayaran:</label>
+        <select id="pembayaran" name="pembayaran">
+          <option value="GoPay">GoPay</option>
+          <option value="DANA">DANA</option>
+          <option value="OVO">OVO</option>
+          <option value="QRIS">QRIS</option>
+        </select>
+        <button type="submit">Top Up Sekarang</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 MEWING STORE</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
